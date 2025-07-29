@@ -1,0 +1,20 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# IDE files
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.user
+
+# OS
+.DS_Store
+Thumbs.db

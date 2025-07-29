@@ -1,0 +1,22 @@
+<unity>
+  <map_button name="WandButton" index="1" unity_button="Fire1" key="VK_LCONTROL" button="JOYSTICK_A" />
+  <map_button name="ChangeWand" index="2" unity_button="Fire3" key="VK_LSHIFT" button="JOYSTICK_X" />
+  <map_button name="Reset" index="3" unity_button="Fire2" key="VK_LMENU" button="JOYSTICK_B16" />
+  <map_button name="Jump" index="4" unity_button="Jump" key="VK_SPACE" button="JOYSTICK_B" />
+  <map_button name="WandLook" index="5" unity_button="" />
+  <map_button name="NavSpeed" index="6" unity_button="" />
+  <map_button name="WandDrive" index="7" unity_button="" />
+  <map_button name="RightTrigger" index="8" unity_button="" />
+  <map_button name="Back" index="9" unity_button="" />
+  <map_button name="Start" index="10" unity_button="" />
+  <map_button name="LeftStickPress" index="11" unity_button="" />
+  <map_button name="RightStickPress" index="12" unity_button="" />
+  <map_valuator name="Yaw" index="1" unity_axis="" positive_key="VK_E" negative_key="VK_Q" dead_zone="0.1" axis="JOYSTICK_THUMB_RX" />
+  <map_valuator name="Forward" index="2" unity_axis="Vertical" positive_key="VK_W" negative_key="VK_S" dead_zone="0.1" axis="JOYSTICK_THUMB_LY" />
+  <map_valuator name="Strafe" index="3" unity_axis="Horizontal" positive_key="VK_D" negative_key="VK_A" dead_zone="0.1" axis="JOYSTICK_THUMB_LX" />
+  <map_valuator name="Pitch" index="4" unity_axis="" dead_zone="0.1" />
+  <map_valuator name="UpDown" index="6" unity_axis="" positive_button="JOYSTICK_DPAD_UP" negative_button="JOYSTICK_B2" />
+  <map_valuator name="LeftRight" index="5" />
+  <map_tracker name="Head" index="1" />
+  <map_tracker name="Wand" index="2" />
+</unity>
