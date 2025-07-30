@@ -13,11 +13,11 @@ Some of the scripts and packages are specific to running the project on the Bris
 
 To get started: 
 
-- Download Unity Hub from here : https://unity.com/download
-- Install Unity version 2022.3.44f1 from the unity archive using this link: https://unity.com/releases/editor/archive
-- Install  Git LFS (Large File Storage) which can be done with the following command: ```git lfs install```
-- Clone this git repository 
-- Within Unity select add project and open the local git repository 'Interactive_Earth_Climate_3D_Unity'
+1. Download Unity Hub from here : https://unity.com/download
+2. Install Unity version 2022.3.44f1 from the unity archive using this link: https://unity.com/releases/editor/archive
+3. Install  Git LFS (Large File Storage) which can be done with the following command: ```git lfs install```
+4. Clone this git repository 
+5. Within Unity select add project and open the local git repository 'Interactive_Earth_Climate_3D_Unity'
 
 
 ### Folder Structure
