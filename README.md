@@ -16,7 +16,7 @@ To get started:
 1. Download Unity Hub from here : https://unity.com/download
 2. Install Unity version 2022.3.44f1 from the unity archive using this link: https://unity.com/releases/editor/archive
 3. Install  Git LFS (Large File Storage) which can be done with the following command: ```git lfs install```
-4. Clone this git repository 
+4. Clone this git repository ```git clone git clone https://github.com/Laprama/Interactive_Earth_Climate_3D_Unity.git```
 5. Within Unity select add project and open the local git repository 'Interactive_Earth_Climate_3D_Unity'
 
 
