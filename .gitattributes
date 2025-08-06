@@ -1,11 +1,53 @@
+# Set the default behavior to automatically normalize line endings to LF.
+# This is a strong baseline for all files Git considers to be text.
+* text=auto eol=lf
+
+# Explicitly define text files to ensure they are normalized.
+# This overrides the 'auto' detection for guaranteed text files.
+*.cs text
+*.js text
+*.shader text
+*.txt text
+*.xml text
+*.yml text
+*.json text
+*.asmdef text
+*.md text
+*.meta text
+
+# Explicitly define binary files that should NOT be modified.
+# These are assets that are not large enough for LFS but must not be changed.
+# The `binary` attribute is a shorthand for `-text -diff -merge`.
+*.asset binary
+*.unity binary
+*.prefab binary
+*.mat binary
+*.anim binary
+*.controller binary
+*.overrideController binary
+*.physicMaterial binary
+*.physicsMaterial2D binary
+*.fontsettings binary
+*.guiskin binary
+*.lighting binary
+*.terrainlayer binary
+*.playable binary
+
+# --- Git LFS Rules ---
+# Define large binary assets to be tracked by Git LFS.
+# The `-text` here prevents line ending conversion.
 *.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
-# Use Unix-style LF endings for all text files in repo
-* text=auto
-
-# Force Unity meta files to use LF
-*.meta text eol=lf
-
-# Force scripts to use LF
-*.cs text eol=lf
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
 
