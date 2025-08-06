@@ -12,6 +12,10 @@ public class CircleGizmo : MonoBehaviour
     [Min(0.1f)]
     public float radius = 2f;
 
+    [Tooltip("The radius of the solid dot at the center.")]
+    [Min(0.01f)]
+    public float centerDotRadius = 0.1f;
+
     [Tooltip("The number of line segments to use for drawing the circle. More segments create a smoother circle.")]
     [Range(4, 256)]
     public int segments = 36;
@@ -25,13 +29,16 @@ public class CircleGizmo : MonoBehaviour
     /// It only runs in the editor.
     /// We use OnDrawGizmosSelected so the circle only appears when the object is selected.
     /// </summary>
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         // Set the color for the gizmos that will be drawn next.
         Gizmos.color = gizmoColor;
 
         // The center of the circle is the position of the GameObject this script is attached to.
         Vector3 center = transform.position;
+
+        // Draw the solid sphere at the center
+        Gizmos.DrawSphere(center, centerDotRadius);
 
         // We need to calculate the position of points on the circle's circumference.
         // We'll draw lines between these points to form the circle.
